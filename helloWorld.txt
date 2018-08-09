@@ -1,0 +1,15 @@
+@RestController
+@SpringBootApplication
+public class TestApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(TestApplication.class, args);
+    }
+
+
+
+    @RequestMapping(value= "/",produces = "text/plain;charset=utf-8")
+    String index(){
+        return "hell Spring Boot! The BookName is";
+    }
+}
